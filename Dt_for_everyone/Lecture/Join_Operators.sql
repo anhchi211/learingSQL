@@ -23,6 +23,10 @@ use D4E31
  select distinct Apply.sID, sName, GPA, Apply.cName, enrollment
  from (Apply join Student on Apply.sID = Student.sID )
  join College on Apply.cName = College.Cname 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5b2c68a58618339f9c9b3285908d250169c7fd6c
 
 
 
