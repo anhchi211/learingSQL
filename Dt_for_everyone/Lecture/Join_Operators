@@ -6,12 +6,13 @@ use D4E31
 
  Select Distinct S.sName, A.major
  From Student S
- INNER JOIN Apply A on S.sID = A.sID
+ Inner JOIN Apply A on S.sID = A.sID
 
  Select *
  From [Apply], Student
 
  /*Names and GPAs of students with sizeHS < 1000 applying to CS at Stanford*/
+
  Select sName, GPA
  From Student S
  JOIN Apply A on S.sID = A.sID 
