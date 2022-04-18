@@ -124,9 +124,6 @@ Select sName
 From Student
 WHERE  sID in (select sID from [Apply] where major='CS') and sID not in (select sID from [Apply] where major='EE')
 
-
-/*Biggest college*/ 
-
 /* Student with highest GPA*/
 Select *
 From Student
@@ -140,9 +137,7 @@ Where GPA > (Select distinct GPA
                    where GPA <= All (select GPA from Student) )
 
 
-Select *
-From Student
-Where GPA > ANY (select GPA from Student)
+
 
 
 
