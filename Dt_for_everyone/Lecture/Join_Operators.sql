@@ -20,9 +20,9 @@ use D4E31
 
  /*Application info: ID, name, GPA, college name, enrollment*/
 
-select Apply.sID, sName, GPA, Apply.cName, enrollment
-from Apply join Student join College
-on Apply.sID = Student.sID and Apply.cName = College.cName
+ select distinct Apply.sID, sName, GPA, Apply.cName, enrollment
+ from (Apply join Student on Apply.sID = Student.sID )
+ join College on Apply.cName = College.Cname 
 
 
 
